@@ -41,6 +41,7 @@ export default function Home({ data }) {
                 </span>
               </h3>
               <p>{node.excerpt}</p>
+              <p>{node.fileAbsolutePath}</p>
             </Link>
           </div>
         ))}
@@ -64,6 +65,7 @@ export const query = graphql`
             slug
           }
           excerpt
+          fileAbsolutePath
         }
       }
     }
